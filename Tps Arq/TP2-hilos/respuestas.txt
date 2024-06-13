@@ -1,0 +1,2 @@
+Es un problema de concurrencia, no funcionan mutuamente o alternadamente.
+En conclusion trabajaba un solo hilo.

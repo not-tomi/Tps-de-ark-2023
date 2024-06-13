@@ -1,0 +1,76 @@
+SINHILOS
+
+¿Qué se puede notar con respecto al tiempo de ejecución? ¿Es predecible?
+
+- Al ejecutarlos varias veces seguidas se ve que tarda mas en finalizar los procesos, en cambio si lo ejecutas en un tiempo mas espaciado suelen tener valores similares  
+  desconozco si es casualidad o realmente es una variable que  interfiere en su resultado, aun así se podria decir que no es predecible.
+
+Nombrar un proceso o función de la vida real que pueden ser considerados procesos de “máxima
+velocidad posible” que dependen casi exclusivamente de la velocidad de la máquina que los ejecuta
+
+- Podria ser imprimir con un for números del 1 al 1 Millón, depende totalmente de la velocidad de la maquina
+
+Nombrar un proceso o función de la vida real que pueden ser considerados procesos de “velocidad de
+respuesta no dependiente de la velocidad de procesamiento” o que sea de naturaleza impredecible
+
+- Por ejemplo, un sistema operativo en tiempo real debe gestionar la asignación de recursos (como CPU y memoria) de manera eficiente y rápida 
+  para garantizar que las tareas críticas se ejecuten en el momento adecuado, incluso si surgen eventos imprevistos.
+
+     En este caso, la velocidad de respuesta no depende únicamente de la velocidad de procesamiento del hardware, sino de la capacidad del sistema 
+  operativo para gestionar de manera efectiva los eventos impredecibles y asignar recursos de manera óptima para garantizar que las tareas críticas 
+  se ejecuten sin problemas y dentro de los plazos requeridos.
+
+
+.................................................................................................
+
+CONHILOS
+
+¿Qué se puede notar con respecto al tiempo de ejecución? ¿Se mejoró el tiempo de respuesta con
+respecto al mismo programa sin hilos?
+
+- Sí, a pesar de que la diferencia no fue mucha, en procesos mas pesados el multihilos es importante, se puede apreciar tambien que dura basicamente 4 segundos que es
+la tarea de la funcion tarea_3, lo que difiere es la velocidad del procesamiento de instrucción
+
+¿Completan las funciones su ejecución en el orden establecido?
+
+No, termina primero la tarea 2 que es la mas corta, luego la 1 y finalmente termina la 3.
+
+
+Nombrar un escenario real donde el multihilado puede mejorar mucho el tiempo de respuesta de un
+sistema (ej. Carga de una página WEB en un navegador)
+
+Videojuegos: Cuando juegas un videojuego, el motor del juego debe realizar una serie de cálculos y renderizar imágenes en tiempo real para mostrar la escena en pantalla.
+ Esto incluye la simulación de física, la detección de colisiones, la animación de personajes, la iluminación y muchos otros aspectos. Estos cálculos son intensivos en CPU 
+ y GPU. El uso de hilos múltiples permite que el motor del juego divida estas tareas en múltiples subprocesos, lo que puede mejorar significativamente el tiempo de respuesta 
+ y la fluidez del juego. 
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+ CON RACE CONDITION
+
+¿Qué se puede notar con respecto al tiempo de ejecución?
+
+- el tiempo total de ejecución es similar debido a que las operaciones son las mismas, y la diferencia en el enfoque (hilos en paralelo vs. secuencial) no tiene un impacto 
+significativo en el rendimiento en este escenario específico debido a que se hacen la misma cantidad de calculos a una misma variable global
+
+¿que sucede con el acumulador?
+
+sigue en 0
+
+--------------------------------------------------------------------------------------------------------------
+
+SIN RACE CONDITION
+
+¿Qué sucede con el valor final del acumulador?
+
+- El valor final sigue en 0
+
+¿Qué se puede notar con respecto al tiempo de ejecución?
+
+- Es muchisimo mas larg
+
+
+
+

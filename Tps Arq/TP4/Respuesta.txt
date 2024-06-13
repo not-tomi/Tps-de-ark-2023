@@ -1,0 +1,1 @@
+se hizo un codigo en el que se le concatena un nombre a la api para que lo busque en la api y devuelva su genero, tambien generando una edad aleatoria
